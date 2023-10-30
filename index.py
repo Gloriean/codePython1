@@ -11,12 +11,17 @@ print(var)
 print(type(var), var)
 
 num = array.array('I', [4, 5, 6])
+num.sort()
 print(num)
 print(type(num), num)
+
 
 add = array.array('d')
 add = obj + var
 print("Array add = " , add)
+
+
+str = array.array('')
 
 
 nM = array.array('i', [6, 67, 7, -9, -2, -12, 5])
@@ -24,4 +29,7 @@ for i in nM:
     print(i)
 
 for pnt in range(5):
-    print(nM[pnt])
+    print(pnt, nM[pnt])
+
+nM.reverse()
+print(nM)
