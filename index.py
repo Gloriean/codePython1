@@ -11,17 +11,27 @@ print(var)
 print(type(var), var)
 
 num = array.array('I', [4, 5, 6])
-num.sort()
 print(num)
 print(type(num), num)
-
 
 add = array.array('d')
 add = obj + var
 print("Array add = " , add)
 
+str = 'gfyyryrur'
+array.array('u')
+print(str)
 
-str = array.array('')
+import array
+ver = array.array('i', [4, 5, 6, 9])
+print(ver)
+
+for i in ver:
+    print(i)
+
+for i in range(4):
+    print(i)
+#Classes and Objects
 
 
 nM = array.array('i', [6, 67, 7, -9, -2, -12, 5])
