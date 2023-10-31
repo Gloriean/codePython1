@@ -46,13 +46,29 @@ p1.fun()
 
 #Second class
 class Dog:
-    def __init__(self, breed, colour, sound):
-        self.breed = breed
-        self.colour = colour
-        self.sound = sound
+    animal = 'dog'
 
-    def show(self):
-        print("Hello, I'm a " + self.breed + "," + " My colour is " + self.colour + "." + " I " + self.sound)
+    def __init__(sef, breed, colour, sound):
+        sef.breed = breed
+        sef.colour = colour
+        sef.sound = sound
+
+    def show(sef):
+        print("Hello, I'm a " + sef.breed + "," + " My colour is " + sef.colour + "." + " I " + sef.sound)
 
 p2 = Dog('police dog', 'brown', 'bark')
 p2.show()
+
+
+#Third class, String function
+class GFG:
+    def __init__(sel, name, company):
+        sel.name = name
+        sel.company = company
+
+    def __str__(sel):
+        return f"My name is {sel.name} and I work in {sel.company}."
+
+p3 = GFG('Glory Olasanmi', 'LevelUp')
+print(p3)
+
