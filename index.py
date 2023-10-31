@@ -22,18 +22,6 @@ str = 'gfyyryrur'
 array.array('u')
 print(str)
 
-import array
-ver = array.array('i', [4, 5, 6, 9])
-print(ver)
-
-for i in ver:
-    print(i)
-
-for i in range(4):
-    print(i)
-#Classes and Objects
-
-
 nM = array.array('i', [6, 67, 7, -9, -2, -12, 5])
 for i in nM:
     print(i)
@@ -43,3 +31,28 @@ for pnt in range(5):
 
 nM.reverse()
 print(nM)
+
+#Classes and Objects
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def fun(self):
+        print("Good day, everyone, I'm " + self.name + "." + " I'm " + self.age + " years old" + ".")
+
+p1 = Person('Goland', '38')
+p1.fun()
+
+#Second class
+class Dog:
+    def __init__(self, breed, colour, sound):
+        self.breed = breed
+        self.colour = colour
+        self.sound = sound
+
+    def show(self):
+        print("Hello, I'm a " + self.breed + "," + " My colour is " + self.colour + "." + " I " + self.sound)
+
+p2 = Dog('police dog', 'brown', 'bark')
+p2.show()
