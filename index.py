@@ -41,7 +41,7 @@ class Person:
     def fun(self):
         print("Good day, everyone, I'm " + self.name + "." + " I'm " + self.age + " years old" + ".")
 
-p1 = Person('Goland', '38')
+p1 = Person('Goland', '38') #object
 p1.fun()
 
 #Second class
@@ -52,11 +52,11 @@ class Dog:
         sef.breed = breed
         sef.colour = colour
         sef.sound = sound
-
-    def show(sef):
+ 
+    def show(sef): #method
         print("Hello, I'm a " + sef.breed + "," + " My colour is " + sef.colour + "." + " I " + sef.sound)
 
-p2 = Dog('police dog', 'brown', 'bark')
+p2 = Dog('police dog', 'brown', 'bark') #object
 p2.show()
 
 
@@ -71,4 +71,41 @@ class GFG:
 
 p3 = GFG('Glory Olasanmi', 'LevelUp')
 print(p3)
+
+#Python Inheritance
+#Create a class named PeRson, with firstname and lastname properties, and a printname method:
+
+class PeRson: #class
+    def __init__(self, fname, lname):
+        self.fname = fname #firstname and lastname properties
+        self.lname = lname
+
+    def printname(self): #method
+        print(self.fname, self.lname)
+
+d = PeRson('Glory', 'Olasanmi')
+d.printname()
+
+
+#Second Inheritance
+#Create a class named Student, which will inherit the properties and methods from the Person class:
+
+class Student:
+    def PerSon():
+        pass
+
+#Use the StuDent class to create an object, and then execute the printname method:
+class PersOn:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def printname(self):
+        print(self.name, self.age)
+
+class StuDent(PersOn):
+    pass
+
+t = StuDent('Pherson', 'Michelle')
+t.printname()
 
